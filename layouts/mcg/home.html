@@ -8,7 +8,7 @@
   {{ with .text }}<p>{{ . | markdownify }}</p>{{ end }}
   {{ with .buttons }}
   <div class="btn-row">
-    {{ range $i, $b := . }}<a class="btn{{ if eq $i 0 }} solid{{ end }}" href="{{ $b.url | relLangURL }}">{{ $b.text }}</a>{{ end }}
+    {{ range $i, $b := . }}<a class="btn{{ if eq $i 0 }} solid{{ end }}" href="{{ $b.url | strings.TrimPrefix "/" | relLangURL }}">{{ $b.text }}</a>{{ end }}
   </div>
   {{ end }}
 </section>
@@ -28,7 +28,7 @@
   </div>
   <div class="areas">
     {{- range site.Data.research.areas }}
-    <a class="area" href="{{ printf "/research/#%s" .id | relLangURL }}">
+    <a class="area" href="{{ printf "/research/#%s" .id | strings.TrimPrefix "/" | relLangURL }}">
       <div class="glyph">
         {{- with .image }}{{ with resources.Get (printf "media/%s" .) }}<img src="{{ (.Resize "240x").RelPermalink }}" alt="">{{ end }}{{ else }}{{ partial "mcg/glyph.html" .glyph }}{{ end -}}
       </div>
@@ -37,7 +37,7 @@
     </a>
     {{- end }}
   </div>
-  <div class="more"><a class="btn" href="{{ "/research/" | relLangURL }}">Explore our research →</a></div>
+  <div class="more"><a class="btn" href="{{ "/research/" | strings.TrimPrefix "/" | relLangURL }}">Explore our research →</a></div>
 </section>
 {{- end }}
 
@@ -58,7 +58,7 @@
       <p>{{ .bio | markdownify }}</p>
       {{ with .honors }}<div class="honors"><b>Recent honors</b> · {{ delimit . " · " }}</div>{{ end }}
       <div class="btn-row">
-        <a class="btn" href="{{ "/about/" | relLangURL }}">About Andrés →</a>
+        <a class="btn" href="{{ "/about/" | strings.TrimPrefix "/" | relLangURL }}">About Andrés →</a>
         {{- with $pi }}{{ range .Params.social }}{{ if eq .icon "google-scholar" }}
         <a class="btn" href="{{ .link }}" target="_blank" rel="noopener">Google Scholar ↗</a>
         {{- end }}{{ end }}{{ end }}
@@ -70,7 +70,7 @@
 
 <section class="twocol">
   <div class="news">
-    <div class="colhead"><h2>News</h2><a href="{{ "/post/" | relLangURL }}">All news →</a></div>
+    <div class="colhead"><h2>News</h2><a href="{{ "/post/" | strings.TrimPrefix "/" | relLangURL }}">All news →</a></div>
     <ul>
       {{- range first (.Params.news_count | default 5) (where site.RegularPages "Section" "post").ByDate.Reverse }}
       <li><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
@@ -79,7 +79,7 @@
   </div>
   {{- with .Params.recent_publications }}
   <div class="pubs">
-    <div class="colhead"><h2>Recent Publications</h2><a href="{{ "/publication/" | relLangURL }}">All publications →</a></div>
+    <div class="colhead"><h2>Recent Publications</h2><a href="{{ "/publication/" | strings.TrimPrefix "/" | relLangURL }}">All publications →</a></div>
     <div class="convention">˚ corresponding · * equal · <u>underlined</u> = group member at CU Boulder</div>
     <ol>
       {{- range . }}
@@ -95,7 +95,7 @@
   <div>
     <h2>{{ .title }}</h2>
     {{ with .text }}<p>{{ . | markdownify }}</p>{{ end }}
-    {{ with .button }}<a class="btn light" href="{{ .url | relLangURL }}">{{ .text }}</a>{{ end }}
+    {{ with .button }}<a class="btn light" href="{{ .url | strings.TrimPrefix "/" | relLangURL }}">{{ .text }}</a>{{ end }}
   </div>
 </section>
 {{- end }}

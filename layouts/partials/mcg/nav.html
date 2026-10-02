@@ -1,14 +1,17 @@
 {{- /* Top navigation over the hero. Links come from config/_default/menus.yaml.
        On narrow screens the links collapse behind a CSS-only menu button. */ -}}
 {{- $current := . }}
+{{- $home := "" | relLangURL }}
 <nav class="mcg-nav">
-  <a class="brand" href="{{ "/" | relLangURL }}">Montoya-Castillo Group</a>
+  <a class="brand" href="{{ "/" | strings.TrimPrefix "/" | relLangURL }}">Montoya-Castillo Group</a>
   <input type="checkbox" id="mcg-menu-toggle" class="menu-toggle" aria-label="Open menu">
   <label for="mcg-menu-toggle" class="menu-button" aria-hidden="true"><span></span><span></span><span></span></label>
   <div class="links">
     {{- range site.Menus.main }}
-      {{- $url := .URL | relLangURL }}
-      {{- $active := or (eq $url $current.RelPermalink) (and (ne $url "/") (hasPrefix $current.RelPermalink $url)) }}
+      {{- /* Menu URLs may already carry the site's base path (e.g. "/" → "/montoya-castillo-group/"). */}}
+      {{- $url := .URL }}
+      {{- if not (hasPrefix $url $home) }}{{ $url = $url | strings.TrimPrefix "/" | relLangURL }}{{ end }}
+      {{- $active := or (eq $url $current.RelPermalink) (and (ne $url $home) (hasPrefix $current.RelPermalink $url)) }}
       <a href="{{ $url }}"{{ if $active }} class="active" aria-current="page"{{ end }}>{{ .Name }}</a>
     {{- end }}
   </div>

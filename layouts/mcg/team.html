@@ -23,6 +23,6 @@
 </section>
 
 {{- with .Params.alumni_button }}
-<div class="alumni-cta"><a class="btn" href="{{ .url | relLangURL }}">{{ .text }}</a></div>
+<div class="alumni-cta"><a class="btn" href="{{ .url | strings.TrimPrefix "/" | relLangURL }}">{{ .text }}</a></div>
 {{- end }}
 {{ end }}

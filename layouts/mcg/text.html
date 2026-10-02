@@ -35,7 +35,7 @@
 <section class="closing">
   {{ with .text }}<p>{{ $.RenderString . }}</p>{{ end }}
   <div class="btn-row">
-    {{- range .buttons }}<a class="btn" href="{{ .url | relLangURL }}">{{ .text }}</a>{{ end }}
+    {{- range .buttons }}<a class="btn" href="{{ .url | strings.TrimPrefix "/" | relLangURL }}">{{ .text }}</a>{{ end }}
   </div>
 </section>
 {{- end }}

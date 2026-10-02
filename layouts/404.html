@@ -17,7 +17,7 @@
       </div>
     </section>
     <section class="closing">
-      <div class="btn-row"><a class="btn" href="{{ "/" | relLangURL }}">← Back to the homepage</a></div>
+      <div class="btn-row"><a class="btn" href="{{ "/" | strings.TrimPrefix "/" | relLangURL }}">← Back to the homepage</a></div>
     </section>
   </main>
   {{ partial "mcg/footer.html" . }}

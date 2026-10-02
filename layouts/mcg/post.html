@@ -9,5 +9,5 @@
 <article class="post-body prose">
   {{ .Content }}
 </article>
-<div class="closing"><div class="btn-row"><a class="btn" href="{{ "/post/" | relLangURL }}">← All news</a></div></div>
+<div class="closing"><div class="btn-row"><a class="btn" href="{{ "/post/" | strings.TrimPrefix "/" | relLangURL }}">← All news</a></div></div>
 {{ end }}
