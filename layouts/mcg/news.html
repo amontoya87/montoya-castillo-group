@@ -1,0 +1,17 @@
+{{ define "main" }}
+{{- /* News listing (content/post/_index.md). */ -}}
+{{ partial "mcg/hero.html" . }}
+<section class="news-list">
+  <ul>
+    {{- range (where site.RegularPages "Section" "post").ByDate.Reverse }}
+    <li>
+      <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time>
+      <div>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{ with .Summary }}<p>{{ . | plainify | htmlUnescape }}</p>{{ end }}
+      </div>
+    </li>
+    {{- end }}
+  </ul>
+</section>
+{{ end }}

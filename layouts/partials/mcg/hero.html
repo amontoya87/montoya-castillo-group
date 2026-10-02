@@ -7,7 +7,8 @@
          size:     "full" (100vh) or omitted (85vh)
          scroll_to: optional anchor id for a "Scroll" cue */ -}}
 {{- with .Params.hero }}
-<section class="mcg-hero{{ if eq .size "full" }} full{{ end }}" style="--hero-img: url('{{ partial "mcg/bg.html" .image }}')">
+{{- $len := 0 }}{{ if not (reflect.IsSlice .title) }}{{ $len = len .title }}{{ end }}
+<section class="mcg-hero{{ if eq .size "full" }} full{{ end }}{{ if gt $len 14 }} xlong{{ else if gt $len 8 }} long{{ end }}" style="--hero-img: url('{{ partial "mcg/bg.html" .image }}')">
   <div>
     <h1>
       {{- if reflect.IsSlice .title }}{{ range .title }}<span>{{ . }}</span>{{ end }}{{ else }}{{ .title }}{{ end -}}

@@ -1,12 +1,26 @@
 ---
 title: Join Us
 date: 2024-01-01
-type: landing
+# Rendered by layouts/mcg/text.html.
+type: mcg
+layout: text
+
+hero:
+  image: boulder-sunny.jpg   # file in assets/media/
+  title: Join Us
+  tagline: Montoya-Castillo Group · University of Colorado Boulder
+
+toc:
+  - { id: grad, label: "Graduate Students" }
+  - { id: postdoc, label: "Postdocs" }
+  - { id: undergrad, label: "Undergraduates" }
+  - { id: funding, label: "Funding" }
+  - { id: contact, label: "Contact" }
 
 sections:
   - block: markdown
     content:
-      title: Join Us
+      title: ""
       subtitle: ""
       text: |
         We are always interested in hearing from talented and curious people
@@ -30,6 +44,7 @@ sections:
 
   - block: markdown
     content:
+      id: grad
       title: Prospective Graduate Students
       subtitle: ""
       text: |
@@ -62,6 +77,7 @@ sections:
 
   - block: markdown
     content:
+      id: postdoc
       title: Prospective Postdoctoral Researchers
       subtitle: ""
       text: |
@@ -93,6 +109,7 @@ sections:
 
   - block: markdown
     content:
+      id: undergrad
       title: Undergraduate Researchers
       subtitle: ""
       text: |
@@ -106,6 +123,7 @@ sections:
 
   - block: markdown
     content:
+      id: funding
       title: Funding
       subtitle: ""
       text: |
@@ -134,6 +152,7 @@ sections:
 
   - block: markdown
     content:
+      id: contact
       title: Contact
       subtitle: ""
       text: |

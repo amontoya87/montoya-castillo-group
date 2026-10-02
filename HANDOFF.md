@@ -21,7 +21,11 @@ These three pages now render from custom templates, not HugoBlox blocks:
 - Team grid is generated from `content/authors/*/_index.md`: groups in the order listed in the Team front matter, alphabetical by `last_name`; hover shows `role` (", " → " · "), up to two non-"in progress" education lines, email + Google Scholar from `social`.
 - Homepage news = latest 5 posts automatically. Homepage "Recent Publications" is hand-curated in `content/_index.md` (`recent_publications`).
 - Nav uses `config/_default/menus.yaml`; collapses to a CSS-only menu button under 1100px.
-- Every other page (Publications, About, Join, Alumni, posts, author pages) still uses the HugoBlox theme and its navbar, so the site looks mixed until those are ported.
+- Publications, About, Join Us, Alumni & Collaborators use `layouts/mcg/text.html` (`layout: text`): hero + optional `intro`/`toc` + the existing `sections:` list (each `content.title`/`content.text` in markdown). Don't name a layout `page`: it collides with the theme's.
+- News: `content/post/_index.md` uses `layout: news` and cascades `layout: post` to every post (slim equation-band header). `layouts/404.html` is also custom.
+- Publications list was checked against Google Scholar on Oct 1, 2026; group members are underlined. The per-paper folders in `content/publication/<slug>/` are no longer rendered (cascade `build.render: never`); `generate_publications.py` and those folders are now unused.
+- About page front matter was broken (it closed early, so Education and Invited Talks never showed). Fixed; an orphaned bio fragment is kept as a YAML comment at the end of the file.
+- Still on the HugoBlox theme: author profile pages (`/author/<slug>/`) and tag/category pages. Nothing in the new nav links to them. Outreach & Mentoring is in the menu but the page doesn't exist yet.
 - CI Hugo version bumped to 0.157.0 to match Andrés's Mac (Homebrew). Template lookup for `type: mcg` was verified on 0.157 only.
 - Preview: `.claude/launch.json` has `hugo` (localhost:1313) and `prototypes` (localhost:8765).
 - Pre-port versions of the three `_index.md` files (incl. the longer Research prose) are saved in `prototypes/pre-port/`; they were never committed to git.

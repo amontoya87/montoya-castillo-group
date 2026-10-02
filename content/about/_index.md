@@ -1,12 +1,27 @@
 ---
 title: About Andrés
 date: 2024-01-01
-type: landing
+# Rendered by layouts/mcg/text.html.
+type: mcg
+layout: text
+
+hero:
+  image: colorado-lake.jpg   # file in assets/media/
+  title: About Andrés
+  tagline: Assistant Professor of Chemistry · University of Colorado Boulder
+
+toc:
+  - { id: bio, label: "Bio" }
+  - { id: honors, label: "Honors & Awards" }
+  - { id: service, label: "Service" }
+  - { id: education, label: "Education & Career" }
+  - { id: talks, label: "Invited Talks" }
 
 sections:
   - block: markdown
     content:
-      title: About Andrés
+      id: bio
+      title: Bio
       subtitle: ""
       text: |
         [Andrés Montoya-Castillo](https://www.colorado.edu/chemistry/andres-montoya-castillo)
@@ -50,6 +65,7 @@ sections:
 
   - block: markdown
     content:
+      id: honors
       title: Honors & Awards
       subtitle: ""
       text: |
@@ -82,6 +98,7 @@ sections:
 
   - block: markdown
     content:
+      id: service
       title: Editorial Service
       subtitle: ""
       text: |
@@ -101,32 +118,9 @@ sections:
     design:
       columns: '1'
 
----
-        on developing methods to simulate quantum dynamics involving
-        multiple electronic states coupled to nuclear motions, i.e.,
-        nonadiabatic dynamics, that encode the mechanisms of energy and
-        charge transfer in the condensed phase. As a postdoc in the
-        [Markland group](https://web.stanford.edu/group/markland/index.html)
-        at Stanford University (2016–2020), Andrés worked on a wide variety
-        of problems, ranging from developing an exact Cartesian map for
-        fermionic operators to address the structure and dynamics of
-        many-electron problems, to developing new methods and systematically
-        assessing existing approaches to calculate the optical spectroscopy
-        of chromophores in solution, and constructing an accurate and
-        efficient DFT diabatization method to set the stage for the
-        on-the-fly *ab initio* treatment of nonadiabatic dynamics in the
-        condensed phase.
-
-        Over the past decade, Andrés
-        has mentored more than 20 high school, undergraduate, and graduate
-        students through the Markland group at Stanford,
-        [oSTEM](https://www.ostem.org/), the
-        [Macaulay Honors College Alumni Mentoring Program](https://macaulay.cuny.edu/after-macaulay/mentors/),
-        and the [ESR Foundation](https://rfksri.wixsite.com/researchprogram)
-        (formerly the RFK Science Research Institute).
-
-         - block: markdown
+  - block: markdown
     content:
+      id: education
       title: Education & Career
       subtitle: ""
       text: |
@@ -141,9 +135,9 @@ sections:
     design:
       columns: '1'
 
-
-- block: markdown
+  - block: markdown
     content:
+      id: talks
       title: Invited Lectures & Seminars
       subtitle: ""
       text: |
@@ -261,3 +255,28 @@ sections:
         * Theory and Applications of Computational Chemistry Conference, Seattle (contributed) (Sept. 2016)
     design:
       columns: '1'
+
+# NOTE: this text fragment was left over outside the front matter in an earlier edit and was
+# never shown on the site. Its beginning is missing. Kept here so nothing is lost:
+# on developing methods to simulate quantum dynamics involving
+# multiple electronic states coupled to nuclear motions, i.e.,
+# nonadiabatic dynamics, that encode the mechanisms of energy and
+# charge transfer in the condensed phase. As a postdoc in the
+# [Markland group](https://web.stanford.edu/group/markland/index.html)
+# at Stanford University (2016–2020), Andrés worked on a wide variety
+# of problems, ranging from developing an exact Cartesian map for
+# fermionic operators to address the structure and dynamics of
+# many-electron problems, to developing new methods and systematically
+# assessing existing approaches to calculate the optical spectroscopy
+# of chromophores in solution, and constructing an accurate and
+# efficient DFT diabatization method to set the stage for the
+# on-the-fly *ab initio* treatment of nonadiabatic dynamics in the
+# condensed phase.
+# Over the past decade, Andrés
+# has mentored more than 20 high school, undergraduate, and graduate
+# students through the Markland group at Stanford,
+# [oSTEM](https://www.ostem.org/), the
+# [Macaulay Honors College Alumni Mentoring Program](https://macaulay.cuny.edu/after-macaulay/mentors/),
+# and the [ESR Foundation](https://rfksri.wixsite.com/researchprogram)
+# (formerly the RFK Science Research Institute).
+---

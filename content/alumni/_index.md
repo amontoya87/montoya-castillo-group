@@ -1,7 +1,19 @@
 ---
 title: Alumni & Collaborators
 date: 2024-01-01
-type: landing
+# Rendered by layouts/mcg/text.html.
+type: mcg
+layout: text
+
+hero:
+  image: boulder-misty.jpg   # file in assets/media/
+  title: Alumni & Collaborators
+  tagline: Montoya-Castillo Group · University of Colorado Boulder
+
+closing:
+  buttons:
+    - text: ← Current team
+      url: /people/
 
 sections:
   - block: markdown

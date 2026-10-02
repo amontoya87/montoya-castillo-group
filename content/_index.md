@@ -48,10 +48,10 @@ news_count: 5
 # Recent publications: edit by hand, same format as content/publication/_index.md.
 # <u>…</u> underlines group members at CU Boulder.
 recent_publications:
-  - 'A. Canestraight, <u>A. J. Dominic</u>, <u>AMC</u>, L. Veis, V. Vlcek˚. "[A Stochastic Cluster Expansion for Electronic Correlation in Large Systems.](https://arxiv.org/abs/2602.12254)" *J. Phys. Chem. Lett.*, 17, 4967 (2026)'
+  - 'N. I. Hausman, J. Kelly, M. S. Chen, F. Hu, A. Lee, <u>AMC</u>, G. S. Schlau-Cohen, T. E. Markland. "[Streamlining analysis and design of two-dimensional electronic spectroscopy using machine learning.](https://pubs.aip.org/aip/jcp/article/165/7/074109/3401235)" *J. Chem. Phys.*, 165, 074109 (2026)'
+  - '<u>M. R. Laskowski</u>, <u>S. Bhattacharyya</u>, <u>AMC</u>˚. "[How to improve the accuracy of semiclassical and quasiclassical dynamics with and without generalized quantum master equations.](https://pubs.aip.org/aip/jcp/article/164/22/224115/3394124)" *J. Chem. Phys.*, 164, 224115 (2026)'
   - '<u>T. Li</u>\*, <u>P. Venkatesh</u>\*, <u>N. Shitara</u>, <u>AMC</u>˚. "[Numerically exact quantum dynamics with tensor networks: Predicting the decoherence of interacting spin systems.](https://pubs.aip.org/aip/jcp/article/164/9/091103/3382073/)" *J. Chem. Phys.*, 164, 091103 (2026)'
-  - '<u>N. Shitara</u>, <u>AMC</u>˚. "[Fast, accurate, and error-resilient noise spectroscopy via basis optimization.](https://pubs.aip.org/aip/jcp/article/164/6/061101/3379373)" *J. Chem. Phys.*, 164, 061101 (2026)'
-  - 'J. L. Mendes\*, <u>S. Bhattacharyya</u>\*, C. Huang, J. M. Michelson, F. Babbe, I. M. Klein, <u>T. Sayer</u>, <u>T. Li</u>, J. K. Cooper, H. Liu˚, N. Ginsberg˚, <u>AMC</u>˚, S. K. Cushing˚. "[Coherent and Dynamic Small Polaron Delocalization in CuFeO<sub>2</sub>.](https://doi.org/10.1021/acs.jpclett.5c03430)" *J. Phys. Chem. Lett.*, 17, 656 (2026)'
+  - '<u>N. Shitara</u>, <u>AMC</u>˚. "[Fast, accurate, and error-resilient variational quantum noise spectroscopy.](https://pubs.aip.org/aip/jcp/article/164/6/061101/3379373)" *J. Chem. Phys.*, 164, 061101 (2026)'
 
 join_band:
   image: boulder-winter.jpg
