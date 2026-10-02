@@ -1,0 +1,67 @@
+{{ define "main" }}
+{{ partial "mcg/hero.html" . }}
+
+{{- with .Params.thesis }}
+<section class="thesis">
+  {{ with .eyebrow }}<div class="eyebrow">{{ . }}</div>{{ end }}
+  <h2>{{ .statement | markdownify }}</h2>
+  {{ with .text }}<p>{{ . | markdownify }}</p>{{ end }}
+</section>
+{{- end }}
+
+{{- $areas := site.Data.research.areas }}
+<div class="jump">
+  {{- range $i, $a := $areas }}
+  <a href="#{{ $a.id }}"><span>{{ printf "%02d" (add $i 1) }}</span>{{ $a.short }}</a>
+  {{- end }}
+</div>
+
+{{- range $i, $a := $areas }}
+<section class="r-area{{ if modBool $i 2 | not }} flip{{ end }}" id="{{ $a.id }}">
+  {{- with $a.image }}
+  {{- with resources.Get (printf "media/%s" .) }}
+  <div class="art has-image"><img src="{{ (.Resize "880x").RelPermalink }}" alt="{{ $a.title }}" loading="lazy"></div>
+  {{- end }}
+  {{- else }}
+  <div class="art">
+    {{ partial "mcg/glyph.html" $a.glyph }}
+    <div class="note">Placeholder · illustration to come</div>
+  </div>
+  {{- end }}
+  <div>
+    <div class="num">{{ printf "%02d" (add $i 1) }}</div>
+    <h3>{{ $a.title }}</h3>
+    <p class="pitch">{{ $a.pitch }}</p>
+    <p class="detail">{{ $a.detail }}</p>
+    {{- with $a.pubs }}
+    <div class="keypubs">
+      <h4>Key publications</h4>
+      <ul>
+        {{- range . }}<li><a href="{{ .url }}">{{ .title }}</a></li>{{ end }}
+      </ul>
+    </div>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+{{- with .Params.approach }}
+<section class="approach" style="--eq-img: url('{{ partial "mcg/bg.html" .image }}')">
+  {{ with .eyebrow }}<div class="eyebrow">{{ . }}</div>{{ end }}
+  <h2>{{ .title }}</h2>
+  {{ with .text }}<p>{{ . | markdownify }}</p>{{ end }}
+  <div class="tools">
+    {{- range .tools }}<div class="tool"><b>{{ .name }}</b><span>{{ .text }}</span></div>{{ end }}
+  </div>
+</section>
+{{- end }}
+
+{{- with .Params.closing }}
+<section class="closing">
+  {{ with .text }}<p>{{ . | markdownify }}</p>{{ end }}
+  <div class="btn-row">
+    {{- range .buttons }}<a class="btn" href="{{ .url | relLangURL }}">{{ .text }}</a>{{ end }}
+  </div>
+</section>
+{{- end }}
+{{ end }}

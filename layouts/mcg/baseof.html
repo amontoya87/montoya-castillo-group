@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{{- /* Base template for pages with `type: mcg` (Home, Team, Research).
+       Standalone: does not load the HugoBlox theme's CSS/JS, so the
+       design from prototypes/*.html is reproduced exactly. */ -}}
+<html lang="{{ site.LanguageCode | default "en-us" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{- $title := cond .IsHome site.Title (printf "%s | %s" .Title site.Title) }}
+  <title>{{ $title }}</title>
+  {{- with or .Params.description .Params.summary site.Params.marketing.seo.description }}
+  <meta name="description" content="{{ . | plainify }}">
+  {{- end }}
+  <meta property="og:title" content="{{ $title }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{- with resources.Get "media/icon.png" }}
+  {{- $fav := .Fill "64x64 png" }}
+  <link rel="icon" type="image/png" href="{{ $fav.RelPermalink }}">
+  {{- end }}
+  {{- $css := resources.Get "css/mcg.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+</head>
+<body class="mcg mcg-{{ .Layout | default "page" }}">
+  {{ partial "mcg/nav.html" . }}
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "mcg/footer.html" . }}
+</body>
+</html>

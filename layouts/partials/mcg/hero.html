@@ -1,0 +1,20 @@
+{{- /* Full-bleed photo hero with big uppercase title.
+       Reads `hero:` from the page's front matter:
+         image:    file in assets/media/
+         title:    big title (a list gives one line per item)
+         subtitle: optional smaller tracked line under the title (e.g. GROUP)
+         tagline:  small tracked line
+         size:     "full" (100vh) or omitted (85vh)
+         scroll_to: optional anchor id for a "Scroll" cue */ -}}
+{{- with .Params.hero }}
+<section class="mcg-hero{{ if eq .size "full" }} full{{ end }}" style="--hero-img: url('{{ partial "mcg/bg.html" .image }}')">
+  <div>
+    <h1>
+      {{- if reflect.IsSlice .title }}{{ range .title }}<span>{{ . }}</span>{{ end }}{{ else }}{{ .title }}{{ end -}}
+      {{- with .subtitle }}<span class="sub">{{ . }}</span>{{ end -}}
+    </h1>
+    {{- with .tagline }}<div class="tagline">{{ . }}</div>{{ end }}
+  </div>
+  {{- with .scroll_to }}<a class="scroll-cue" href="#{{ . }}">Scroll</a>{{ end }}
+</section>
+{{- end }}
