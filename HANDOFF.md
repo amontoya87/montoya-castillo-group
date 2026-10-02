@@ -27,7 +27,8 @@ These three pages now render from custom templates, not HugoBlox blocks:
 - About page front matter was broken (it closed early, so Education and Invited Talks never showed). Fixed; an orphaned bio fragment is kept as a YAML comment at the end of the file.
 - Still on the HugoBlox theme: author profile pages (`/author/<slug>/`) and tag/category pages. Nothing in the new nav links to them. Outreach & Mentoring is in the menu but the page doesn't exist yet.
 - CI Hugo version bumped to 0.157.0 to match Andrés's Mac (Homebrew). Template lookup for `type: mcg` was verified on 0.157 only.
-- Preview: `.claude/launch.json` has `hugo` (localhost:1313) and `prototypes` (localhost:8765).
+- Preview: `.claude/launch.json` has `hugo` and `prototypes` (localhost:8765). Because `baseURL` is now the GitHub Pages address (`https://amontoya87.github.io/montoya-castillo-group/`), `hugo server` serves at http://localhost:1313/montoya-castillo-group/. Internal links in the mcg templates go through `strings.TrimPrefix "/" | relLangURL` so they keep the subpath; never hard-code a leading `/`.
+- Git: work is on branch `redesign`. This Mac has no GitHub credentials for the shell, so pushes need Andrés to authenticate (e.g. `gh auth login`).
 - Pre-port versions of the three `_index.md` files (incl. the longer Research prose) are saved in `prototypes/pre-port/`; they were never committed to git.
 
 ---
