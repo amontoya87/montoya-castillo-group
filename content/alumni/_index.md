@@ -6,7 +6,7 @@ type: mcg
 layout: text
 
 hero:
-  image: boulder-misty.jpg   # file in assets/media/
+  image: flatirons-fence.jpg   # file in assets/media/
   title: Alumni & Collaborators
   tagline: Montoya-Castillo Group · University of Colorado Boulder
 

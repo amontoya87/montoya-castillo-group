@@ -6,7 +6,7 @@ type: mcg
 layout: text
 
 hero:
-  image: boulder-sunny.jpg   # file in assets/media/
+  image: chautauqua-trail-hikers.jpg   # file in assets/media/
   title: Join Us
   tagline: Montoya-Castillo Group · University of Colorado Boulder
 

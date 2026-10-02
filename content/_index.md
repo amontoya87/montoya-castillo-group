@@ -54,7 +54,7 @@ recent_publications:
   - '<u>N. Shitara</u>, <u>AMC</u>˚. "[Fast, accurate, and error-resilient variational quantum noise spectroscopy.](https://pubs.aip.org/aip/jcp/article/164/6/061101/3379373)" *J. Chem. Phys.*, 164, 061101 (2026)'
 
 join_band:
-  image: boulder-winter.jpg
+  image: flatirons-snowy-trail.jpg
   title: Join Us
   text: We are looking for curious graduate students and postdocs from every background who want to build the theory behind tomorrow's chemistry, materials, and quantum technologies.
   button:

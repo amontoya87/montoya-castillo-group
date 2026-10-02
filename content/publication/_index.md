@@ -17,7 +17,7 @@ cascade:
       list: never
 
 hero:
-  image: boulder-misty.jpg   # file in assets/media/
+  image: flatirons-golden-hour.jpg   # file in assets/media/
   title: Publications
   tagline: Montoya-Castillo Group · University of Colorado Boulder
 

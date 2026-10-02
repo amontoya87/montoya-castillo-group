@@ -6,7 +6,7 @@ type: mcg
 layout: text
 
 hero:
-  image: colorado-lake.jpg   # file in assets/media/
+  image: cu-campus-flatirons.jpg   # file in assets/media/
   title: About Andrés
   tagline: Assistant Professor of Chemistry · University of Colorado Boulder
 

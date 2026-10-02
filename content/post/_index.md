@@ -5,7 +5,7 @@ type: mcg
 layout: news
 
 hero:
-  image: boulder-sunny.jpg   # file in assets/media/
+  image: flatirons-meadow-morning.jpg   # file in assets/media/
   title: News
   tagline: Montoya-Castillo Group · University of Colorado Boulder
 
