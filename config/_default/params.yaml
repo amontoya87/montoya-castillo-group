@@ -7,9 +7,11 @@
 
 appearance:
   theme_day: minimal
-  theme_night:
+  theme_night: minimal
   font: native
   font_size: L
+  color_theme: custom
+  primary_color: '#CFB87C'
 
 # SEO
 
@@ -45,7 +47,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Montoya-Castillo Group, University of Colorado Boulder'
     license:
       enable: true
       allow_derivatives: false

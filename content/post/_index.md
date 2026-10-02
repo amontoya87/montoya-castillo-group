@@ -1,11 +1,15 @@
 ---
-title: Latest News
+title: News
+# Rendered by layouts/mcg/news.html; each post by layouts/mcg/post.html.
+type: mcg
+layout: news
 
-# Listing view
-view: compact
+hero:
+  image: flatirons-meadow-morning.jpg   # file in assets/media/
+  title: News
+  tagline: Montoya-Castillo Group · University of Colorado Boulder
 
-# Optional banner image (relative to `assets/media/` folder).
-banner:
-  caption: ''
-  image: ''
+cascade:
+  type: mcg
+  layout: post
 ---

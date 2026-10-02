@@ -1,0 +1,11 @@
+{{- /* Returns the URL of an image in assets/media/, resized for full-bleed backgrounds.
+       Usage: {{ partial "mcg/bg.html" "boulder-sunny.jpg" }} */ -}}
+{{- $url := "" }}
+{{- with resources.Get (printf "media/%s" .) }}
+  {{- $img := . }}
+  {{- if gt .Width 2000 }}{{ $img = .Resize "2000x q80" }}{{ end }}
+  {{- $url = $img.RelPermalink }}
+{{- else }}
+  {{- errorf "mcg/bg: image assets/media/%s not found" . }}
+{{- end }}
+{{- return $url }}

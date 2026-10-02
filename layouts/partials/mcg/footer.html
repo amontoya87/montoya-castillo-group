@@ -1,0 +1,7 @@
+<footer class="mcg-footer">
+  Montoya-Castillo Group · Department of Chemistry · University of Colorado Boulder<br>
+  {{- with site.GetPage "/authors/admin" }}{{ with .Params.email }}
+  <a href="mailto:{{ . }}">{{ . }}</a> ·
+  {{- end }}{{ end }}
+  © {{ now.Year }}
+</footer>

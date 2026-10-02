@@ -1,0 +1,28 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "prototypes",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": [
+        "-m",
+        "http.server",
+        "8765",
+        "--directory",
+        "prototypes"
+      ],
+      "port": 8765
+    },
+    {
+      "name": "hugo",
+      "runtimeExecutable": "hugo",
+      "runtimeArgs": [
+        "server",
+        "--port",
+        "1313",
+        "--disableFastRender"
+      ],
+      "port": 1313
+    }
+  ]
+}

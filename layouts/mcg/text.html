@@ -1,0 +1,42 @@
+{{ define "main" }}
+{{- /* Generic text page (Publications, About, Join Us, Alumni).
+       Reads `hero:`, optional `intro:` and the existing `sections:` list
+       (each with content.title / content.subtitle / content.text in markdown). */ -}}
+{{ partial "mcg/hero.html" . }}
+
+{{- with .Params.intro }}
+<section class="page-intro">
+  {{ with .eyebrow }}<div class="eyebrow">{{ . }}</div>{{ end }}
+  {{ with .lead }}<p class="lead">{{ $.RenderString . }}</p>{{ end }}
+  {{ with .text }}<div class="note">{{ $.RenderString (dict "display" "block") . }}</div>{{ end }}
+  <div class="gold-rule"></div>
+</section>
+{{- end }}
+
+{{- with .Params.toc }}
+<nav class="jump page-jump" aria-label="On this page">
+  {{- range . }}<a href="#{{ .id }}">{{ .label }}</a>{{ end }}
+</nav>
+{{- end }}
+
+<div class="page-sections{{ with .Params.page_class }} {{ . }}{{ end }}">
+  {{- range .Params.sections }}
+  {{- with .content }}
+  <section class="prose-section"{{ with .id }} id="{{ . }}"{{ end }}>
+    {{ with .title }}<h2>{{ . }}</h2>{{ end }}
+    {{ with .subtitle }}<p class="subtitle">{{ $.RenderString . }}</p>{{ end }}
+    <div class="prose">{{ with .text }}{{ $.RenderString (dict "display" "block") . }}{{ end }}</div>
+  </section>
+  {{- end }}
+  {{- end }}
+</div>
+
+{{- with .Params.closing }}
+<section class="closing">
+  {{ with .text }}<p>{{ $.RenderString . }}</p>{{ end }}
+  <div class="btn-row">
+    {{- range .buttons }}<a class="btn" href="{{ .url | strings.TrimPrefix "/" | relLangURL }}">{{ .text }}</a>{{ end }}
+  </div>
+</section>
+{{- end }}
+{{ end }}

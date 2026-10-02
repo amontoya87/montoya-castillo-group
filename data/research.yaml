@@ -1,0 +1,75 @@
+# Research areas, shared by the homepage (short form) and the Research page (full form).
+#
+#   id        anchor on the Research page (/research/#id)
+#   short     label for the jump bar
+#   title     full title on the Research page
+#   name      shorter title used on the homepage
+#   summary   one sentence on the homepage
+#   pitch     bold one-line pitch on the Research page
+#   detail    one supporting sentence on the Research page
+#   glyph     placeholder line-art icon (layouts/partials/mcg/glyph.html);
+#             set `image:` to a file in assets/media/ once the group's illustration exists
+#   pubs      key publications
+
+areas:
+  - id: bio
+    short: Biophysical Transformations
+    name: Biophysical Transformations
+    title: Biophysical Transformations Across Timescales
+    summary: Uncovering how slow conformational changes in biomolecules drive disease, revealing principles for molecular treatment design.
+    pitch: Slow, rare conformational changes in biomolecules drive disease. We build the theory to see them.
+    detail: Our methods reach the long timescales that standard simulations miss, revealing the molecular mechanisms of disease and the design principles for molecular treatments.
+    glyph: helix
+    pubs:
+      - title: Building insightful, memory-enriched models to capture long-time biochemical processes from short-time simulations
+        url: https://doi.org/10.1073/pnas.2221048120
+      - title: Memory unlocks the future of biomolecular dynamics
+        url: https://pubs.acs.org/doi/10.1021/jacs.3c01095
+
+  - id: energy
+    short: Energy Flow
+    name: Out-of-Equilibrium Energy Flow
+    title: Out-of-Equilibrium Energy Flow
+    summary: Simulating and decoding spectroscopies and microscopies to steer charge and energy flow in molecules and next-generation energy materials.
+    pitch: We decode spectroscopies and microscopies to steer how charge and energy move through materials.
+    detail: From ultrafast carrier dynamics to trions in 2D semiconductors and symmetry breaking in molecules, we connect theory directly to experiment for solar energy conversion and electrocatalysis.
+    glyph: wave
+    pubs:
+      - title: Nonequilibrium relaxation exponentially delays the onset of quantum diffusion
+        url: https://doi.org/10.1073/pnas.2424582122
+      - title: Trion formation resolves observed peak shifts in the optical spectra of transition-metal dichalcogenides
+        url: https://doi.org/10.1021/acs.nanolett.3c01342
+      - title: Symmetry breaking fluctuations split the porphyrin Q bands
+        url: https://arxiv.org/abs/2411.02687
+
+  - id: sensing
+    short: Quantum Sensing
+    name: Quantum Sensing
+    title: Quantum Sensing for Next-Generation Imaging
+    summary: Enabling precision measurement of temperature, magnetic, and electric field fluctuations in microscopic environments.
+    pitch: We turn decoherence from a limitation into a measurement.
+    detail: Our tools for precision quantum metrology measure temperature, magnetic, and electric field fluctuations in microscopic environments, from quantum devices to molecular magnets and living systems.
+    glyph: sensor
+    pubs:
+      - title: Fast, accurate, and error-resilient variational quantum noise spectroscopy
+        url: https://doi.org/10.1063/5.0312403
+      - title: "Numerically exact quantum dynamics with tensor networks: Predicting the decoherence of interacting spin systems"
+        url: https://pubs.aip.org/aip/jcp/article/164/9/091103/3382073/
+
+  - id: mz
+    short: Mori-Zwanzig Theory
+    name: Mori-Zwanzig Theory
+    title: Mori-Zwanzig Theory
+    summary: Bottom-up and data-driven routes to the dynamics of complex many-body systems, from biomolecules to climate.
+    pitch: We project complex many-body dynamics onto the variables that matter, with controllable accuracy.
+    detail: Bottom-up and data-driven, our approaches span semiclassical theory, quantum transport, multidimensional spectroscopy, and even weather and climate.
+    glyph: network
+    pubs:
+      - title: Data-driven, non-Markovian modelling of weather in the presence of non-stationary, non-Gaussian, and heteroskedastic climate dynamics
+        url: https://arxiv.org/abs/2603.00259
+      - title: How to improve the accuracy of semiclassical and quasiclassical dynamics with and without generalized quantum master equations
+        url: https://pubs.aip.org/aip/jcp/article/164/22/224115/3394124
+      - title: Space-local memory in generalized master equations
+        url: https://doi.org/10.1063/5.0249145
+      - title: Efficient formulation of multitime generalized quantum master equations
+        url: https://doi.org/10.1063/5.0185578

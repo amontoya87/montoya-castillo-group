@@ -1,0 +1,28 @@
+{{ define "main" }}
+{{ partial "mcg/hero.html" . }}
+
+{{- with .Params.intro }}
+<section class="team-intro">
+  {{ with .eyebrow }}<div class="eyebrow">{{ . }}</div>{{ end }}
+  {{ range .paragraphs }}<p>{{ . | markdownify }}</p>{{ end }}
+  <div class="gold-rule"></div>
+</section>
+{{- end }}
+
+{{- /* One flat grid. Order: user_groups in front-matter order, then alphabetical by last name. */}}
+{{- $authors := where site.Pages "Section" "authors" }}
+<section class="people-grid">
+  {{- range .Params.user_groups }}
+    {{- $group := . }}
+    {{- $members := slice }}
+    {{- range $authors }}{{ if in .Params.user_groups $group }}{{ $members = $members | append . }}{{ end }}{{ end }}
+    {{- range sort $members "Params.last_name" }}
+      {{ partial "mcg/person.html" . }}
+    {{- end }}
+  {{- end }}
+</section>
+
+{{- with .Params.alumni_button }}
+<div class="alumni-cta"><a class="btn" href="{{ .url | strings.TrimPrefix "/" | relLangURL }}">{{ .text }}</a></div>
+{{- end }}
+{{ end }}

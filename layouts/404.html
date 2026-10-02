@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default "en-us" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found | {{ site.Title }}</title>
+  {{- $css := resources.Get "css/mcg.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+</head>
+<body class="mcg mcg-404">
+  {{ partial "mcg/nav.html" . }}
+  <main>
+    <section class="mcg-hero" style="--hero-img: url('{{ partial "mcg/bg.html" "flatirons-autumn-meadow.jpg" }}')">
+      <div>
+        <h1>404</h1>
+        <div class="tagline">This page wandered off into the Flatirons</div>
+      </div>
+    </section>
+    <section class="closing">
+      <div class="btn-row"><a class="btn" href="{{ "/" | strings.TrimPrefix "/" | relLangURL }}">← Back to the homepage</a></div>
+    </section>
+  </main>
+  {{ partial "mcg/footer.html" . }}
+</body>
+</html>

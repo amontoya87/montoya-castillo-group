@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{- /* A single news post (content/post/<slug>/index.md). Slim equation-band header. */ -}}
+<header class="post-header" style="--eq-img: url('{{ partial "mcg/bg.html" "equations.jpg" }}')">
+  <div>
+    <div class="eyebrow">News · <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time></div>
+    <h1>{{ .Title }}</h1>
+  </div>
+</header>
+<article class="post-body prose">
+  {{ .Content }}
+</article>
+<div class="closing"><div class="btn-row"><a class="btn" href="{{ "/post/" | strings.TrimPrefix "/" | relLangURL }}">← All news</a></div></div>
+{{ end }}
