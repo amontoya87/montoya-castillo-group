@@ -34,6 +34,9 @@ bio: ''
 
 highlight_name: false
 
+honors:
+  - Toji Fellowship, Department of Chemistry (Summer 2026)
+
 user_groups:
   - Undergraduate Researchers
 ---

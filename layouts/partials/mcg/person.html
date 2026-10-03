@@ -29,6 +29,7 @@
     <div class="person-name">{{ .Title }}</div>
     {{ with $role }}<div class="person-role">{{ . }}</div>{{ end }}
     {{ range first 2 $edu }}<div class="person-edu">{{ . }}</div>{{ end }}
+    {{ range .Params.honors }}<div class="person-honor">{{ . }}</div>{{ end }}
     {{- if or $email $scholar $web }}
     <div class="person-socials">
       {{- with $email }}<a href="{{ . }}" aria-label="Email {{ $p.Title }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1z"/><path d="M3 7l9 7 9-7"/></svg></a>{{ end }}
