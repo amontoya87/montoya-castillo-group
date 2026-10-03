@@ -38,10 +38,9 @@ sections:
         ### Preprints
 
         1. <u>T. Li</u>, <u>AMC</u>. "[Hidden gauge freedom in complex-pole hierarchical equations of motion.](https://arxiv.org/abs/2607.04834)" *arXiv*:2607.04834 (2026)
-        1. T. J. Krogmeier, <u>P. Venkatesh</u>, M. Z. Fahrenbruch, A. W. Schlimgen, <u>AMC</u>, K. Head-Marsden. "[Designing robust molecular spins for quantum technologies with theoretical chemistry.](https://arxiv.org/abs/2608.13744)" *arXiv*:2608.13744 (2026)
+        1. T. J. Krogmeier\*, <u>P. Venkatesh</u>\*, M. Z. Fahrenbruch, A. W. Schlimgen, <u>AMC</u>˚, K. Head-Marsden˚. "[Designing robust molecular spins for quantum technologies with theoretical chemistry.](https://arxiv.org/abs/2608.13744)" *arXiv*:2608.13744 (2026)
         1. R. Almaraz\*, A. P. Tews\*, <u>T. Sayer</u>\*, J. Toole, K. Wang, M. Ahmadi, D. Wright, E. M. Miller, R. Nazemi, S. Ki, S. Maldonado, <u>AMC</u>, J. B. Sambur˚. "[Giant band gap renormalization dictates current–voltage behavior of 2D semiconductor electrodes.](https://chemrxiv.org/doi/full/10.26434/chemrxiv.15003526/v2)" *ChemRxiv*:15003526 (2026)
         1. <u>T. Sayer</u>\*, <u>E. H. Fink</u>\*, <u>Z. R. Wiethorn</u>, D. R. Williams, <u>A. J. Dominic</u>, L. Guerrieri, Y. Ji, V. Policht, J. Ogilvie, G. Schlau-Cohen, A. Krummel, <u>AMC</u>˚. "[Short-lived memory in multidimensional spectra encodes full signal evolution.](https://arxiv.org/abs/2603.29814)" *arXiv*:2603.29814 (2026)
-        1. <u>T. Li</u>, <u>P. Venkatesh</u>, Q. Shi˚, <u>AMC</u>˚. "[For molecular polaritons, disorder and phonon timescales control the activation of dark states in the thermodynamic limit.](https://arxiv.org/abs/2603.06868)" *arXiv*:2603.06868 (2026)
         1. <u>T. Sayer</u>, <u>AMC</u>˚. "[Data-driven, non-Markovian modelling of weather in the presence of non-stationary, non-Gaussian, and heteroskedastic climate dynamics.](https://arxiv.org/abs/2603.00259)" *arXiv*:2603.00259 (2026)
         1. N. M. Tubman˚, C. J. N. Coveney, C.-E. Hsu, <u>AMC</u>, M. R. Filip, J. B. Neaton, Z. Li, V. Vlcek, A. M. Alvertis˚. "[Phonon-mediated electron attraction in SrTiO3 via the generalized Fröhlich and deformation potential mechanisms.](https://arxiv.org/abs/2501.17230)" *arXiv*:2501.17230 (2025)
         1. <u>Z. R. Wiethorn</u>, K. Hunter, <u>AMC</u>˚, T. Zuehlsdorff˚. "[Symmetry breaking fluctuations split the porphyrin Q bands.](https://arxiv.org/abs/2411.02687)" *arXiv*:2411.02687 (2024)
@@ -50,6 +49,7 @@ sections:
 
         #### 2026
 
+        1. <u>T. Li</u>, <u>P. Venkatesh</u>, Q. Shi˚, <u>AMC</u>˚. "[For molecular polaritons, disorder and phonon timescales control the activation of dark states in the thermodynamic limit.](https://pubs.acs.org/doi/10.1021/acs.jpclett.6c02068)" *J. Phys. Chem. Lett.*, in press (2026)
         1. N. I. Hausman, J. Kelly, M. S. Chen, F. Hu, A. Lee, <u>AMC</u>, G. S. Schlau-Cohen, T. E. Markland. "[Streamlining analysis and design of two-dimensional electronic spectroscopy using machine learning.](https://pubs.aip.org/aip/jcp/article/165/7/074109/3401235)" *J. Chem. Phys.*, 165, 074109 (2026)
         1. N. M. Tubman˚, C. J. N. Coveney, C.-E. Hsu, <u>AMC</u>, M. R. Filip, J. B. Neaton, Z. Li, V. Vlcek, A. M. Alvertis˚. "[Theory of ab initio downfolding with arbitrary-range electron-phonon coupling.](https://link.aps.org/doi/10.1103/7hqv-hn2v)" *Phys. Rev. B*, 113, 245144 (2026)
         1. <u>M. R. Laskowski</u>, <u>S. Bhattacharyya</u>, <u>AMC</u>˚. "[How to improve the accuracy of semiclassical and quasiclassical dynamics with and without generalized quantum master equations.](https://pubs.aip.org/aip/jcp/article/164/22/224115/3394124)" *J. Chem. Phys.*, 164, 224115 (2026)

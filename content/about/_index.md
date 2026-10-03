@@ -69,6 +69,7 @@ sections:
       title: Honors & Awards
       subtitle: ""
       text: |
+        * [*Journal of Chemical Physics* Best Theoretical Paper by an Emerging Investigator Award](https://pubs.aip.org/aip/jcp/pages/awards) (2025)
         * Magomedov-Shcherbinina Research Award and Lecture, University of Rochester (2026–2027)
         * [Camille Dreyfus Teacher–Scholar Award](https://www.dreyfus.org/2026-camille-dreyfus-teacher-scholar-awards/) (2026)
         * ACS OpenEye/Cadence Outstanding Junior Faculty Award (2026)
