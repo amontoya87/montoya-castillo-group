@@ -66,10 +66,12 @@ sections:
       id: visitors
       title: Visitors
       text: |
-        | Name | Visiting from | Years | Now |
+        | Name | Visiting from | When | Work in the group |
         |---|---|---|---|
-        | Lena Niepelt | Visiting Master's Student, ETH Zurich | 2024–2025 | ETH Zurich |
-        | Jack Good | High School Researcher | 2021–2022 | Undergraduate, Cornell University |
+        | Yiming Zhu | Sophomore, Hamilton College | Summer 2026 (May 21 – July 30) | Ten-week research internship with Pranay Venkatesh and Tianchu Li, learning and applying our quantum dynamics tools (SBtMPS) to understand decoherence in molecular qubits |
+        | Ofir Blumer | PhD student, Tel Aviv University (Hirschberg group) | Fall 2025 (six weeks) | Merging his ideas on stochastic resetting with our biomolecular generalized master equations, supported by the Rahamimoff Travel Grant Program |
+        | Lina Niepelt | Master's student, ETH Zurich | 2024–2025 | Master's thesis: *Projection operators and decorrelation times in non-Markovian dynamics modeling* |
+        | Jack Good | High school researcher | 2021–2022 | Now an undergraduate at Cornell University |
     design:
       columns: '1'
 
