@@ -55,7 +55,7 @@ sections:
         | Name | Years | Honors in the group | Now |
         |---|---|---|---|
         | Anthony Hampton | Summer 2023 – Summer 2024 | ACS Physical Chemistry Award (2024); Toji Fellowship, Department of Chemistry (Summer 2023, Summer 2024) | Asset Management Analyst, Wunder Capital |
-        | Monica Ochoa | Fall 2023 – Spring 2026 | ACS Physical Chemistry Award (2025); Pfizer La Jolla Academic-Industrial Relations (AIR) Diversity Research; Undergraduate Research Opportunities Program, UROP (Fall 2024) | Clinical Research Coordinator, CU Anschutz |; Honors thesis: *Toward Mechanistic Insight of Intrinsically Disordered Proteins Using AlphaFold*
+        | Monica Ochoa | Fall 2023 – Spring 2026 | ACS Physical Chemistry Award (2025); Pfizer La Jolla Academic-Industrial Relations (AIR) Diversity Research; Undergraduate Research Opportunities Program, UROP (Fall 2024); Honors thesis: *Toward Mechanistic Insight of Intrinsically Disordered Proteins Using AlphaFold* | Clinical Research Coordinator, CU Anschutz |
         | Marcos Ortega-Keshmiri | Spring 2025 – Fall 2025 | Undergraduate Research Opportunities Program, UROP (Summer 2025) | |
         | Patrick Pillans | Fall 2022 – Spring 2024 | | Physics Master's student, University of Northern British Columbia |
     design:
