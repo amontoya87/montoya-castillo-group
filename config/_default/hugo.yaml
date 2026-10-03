@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Montoya-Castillo Group # Website name
-baseURL: 'https://amontoya87.github.io/montoya-castillo-group/' # GitHub Pages address (the deploy workflow also sets this)
+baseURL: 'https://www.montoyacastillogroup.com/' # custom domain (the deploy workflow also sets this)
 
 ############################
 ## LANGUAGE
