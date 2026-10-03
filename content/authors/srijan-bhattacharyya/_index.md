@@ -3,7 +3,7 @@ avatar_filename: avatar.jpeg
 title: Srijan Bhattacharyya
 first_name: Srijan
 last_name: Bhattacharyya
-role: Graduate Student, Chemical Physics
+role: CCTCh Postdoctoral Fellow, University of Chicago (PhD 2026)
 organizations:
   - name: University of Colorado Boulder
     url: 'https://www.colorado.edu/chemistry'
@@ -15,8 +15,9 @@ interests:
   - DMRG
 education:
   courses:
-    - course: PhD in Chemical Physics (in progress)
+    - course: PhD in Chemical Physics
       institution: University of Colorado Boulder
+      year: 2026
     - course: M.Sc. in Chemistry
       institution: IIT Kanpur, India
     - course: B.Sc. in Chemistry
@@ -31,5 +32,5 @@ social:
 email: 'Srijan.Bhattacharyya@colorado.edu'
 highlight_name: false
 user_groups:
-  - Graduate Students
+  - Alumni
 ---

@@ -21,6 +21,9 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:Zachary.Wiethorn@colorado.edu'
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.com/citations?user=m_m2_d4AAAAJ
 email: 'Zachary.Wiethorn@colorado.edu'
 highlight_name: false
 user_groups:

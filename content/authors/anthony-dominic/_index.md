@@ -22,6 +22,9 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:Anthony.Dominiciii@colorado.edu'
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.com/citations?user=cpc-4B8AAAAJ
 email: 'Anthony.Dominiciii@colorado.edu'
 highlight_name: false
 user_groups:

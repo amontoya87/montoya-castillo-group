@@ -25,6 +25,7 @@ sections:
         |---|---|---|---|
         | Jack Good | High School Researcher | 2021–2022 | Undergraduate, Cornell University |
         | Lena Niepelt | Visiting Master's Student (ETH Zurich) | 2024–2025 | ETH Zurich |
+        | Srijan Bhattacharyya | Graduate Student (Chemical Physics) | 2021–2026 | CCTCh Postdoctoral Fellow, University of Chicago (Jasrasaria group) |
         | Tom Sayer | Postdoctoral Researcher | 2021–2024 | Independent Postdoc, Durham University (Leverhulme Early Career Fellow) |
         | Nanako Shitara | Graduate Student (Physics) | 2021–2025 | Postdoctoral Scholar, University of Toronto (Izmaylov & Brumer groups) |
         | Arian Vezvaee | Postdoctoral Researcher | 2021–2023 | Postdoc, University of Southern California (Lidar group) |

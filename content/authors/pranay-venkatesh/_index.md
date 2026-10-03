@@ -27,7 +27,10 @@ social:
     link: 'mailto:Pranay.Venkatesh@colorado.edu'
   - icon: google-scholar
     icon_pack: ai
-    link: https://scholar.google.com/citations?user=m_m2_d4AAAAJ
+    link: https://scholar.google.com/citations?user=4szVTK4AAAAJ
+  - icon: globe
+    icon_pack: fas
+    link: http://chemicalfiend.github.io/
 email: 'Pranay.Venkatesh@colorado.edu'
 highlight_name: false
 user_groups:
