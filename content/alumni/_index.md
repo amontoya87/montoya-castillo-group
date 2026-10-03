@@ -69,8 +69,8 @@ sections:
         | Name | Visiting from | When | Work in the group |
         |---|---|---|---|
         | Yiming Zhu | Sophomore, Hamilton College | Summer 2026 (May 21 – July 30) | Ten-week research internship with Pranay Venkatesh and Tianchu Li, learning and applying our quantum dynamics tools (SBtMPS) to understand decoherence in molecular qubits |
-        | Ofir Blumer | PhD student, Tel Aviv University (Hirschberg group) | Fall 2025 (six weeks) | Merging his ideas on stochastic resetting with our biomolecular generalized master equations, supported by the Rahamimoff Travel Grant Program |
-        | Lena Niepelt | Master's student, ETH Zurich | 2024–2025 | Master's thesis: *Projection operators and decorrelation times in non-Markovian dynamics modeling* |
+        | Ofir Blumer | PhD student, Tel Aviv University (Hirschberg group) | Fall 2025 (six weeks) | Worked with Anthony Dominic to merge his ideas on stochastic resetting with our biomolecular generalized master equations, supported by the Rahamimoff Travel Grant Program |
+        | Lena Niepelt | Master's student, ETH Zurich | 2024–2025 | Worked with Anthony Dominic. Master's thesis: *Projection operators and decorrelation times in non-Markovian dynamics modeling* |
         | Jack Good | High school researcher | 2021–2022 | Now an undergraduate at Cornell University |
     design:
       columns: '1'
