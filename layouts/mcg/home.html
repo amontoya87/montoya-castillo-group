@@ -47,7 +47,7 @@
   <div class="pi-inner">
     <div class="pi-photo">
       {{- with $pi }}{{ with .Resources.GetMatch "avatar*" }}
-      {{- $img := .Fill "600x600 Top q82" }}
+      {{- $img := .Fill "600x600 Center q82" }}
       <img src="{{ $img.RelPermalink }}" alt="{{ $pi.Title }}" width="300" height="300">
       {{- end }}{{ end }}
     </div>

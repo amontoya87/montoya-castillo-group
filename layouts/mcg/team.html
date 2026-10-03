@@ -9,6 +9,16 @@
 </section>
 {{- end }}
 
+{{- with .Params.group_photo }}
+<figure class="group-photo">
+  {{- with resources.Get (printf "media/%s" .image) }}
+  {{- $img := .Resize "1800x q82" }}
+  <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $.Params.group_photo.alt | default "The Montoya-Castillo Group" }}" loading="lazy">
+  {{- end }}
+  {{ with .caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+</figure>
+{{- end }}
+
 {{- /* One flat grid. Order: user_groups in front-matter order, then alphabetical by last name. */}}
 {{- $authors := where site.Pages "Section" "authors" }}
 <section class="people-grid">
