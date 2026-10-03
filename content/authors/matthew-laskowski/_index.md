@@ -24,7 +24,7 @@ social:
     link: 'mailto:Matthew.Laskowski@colorado.edu'
   - icon: google-scholar
     icon_pack: ai
-    link: https://scholar.google.com/citations?user=mq4BUfQAAAAJ
+    link: https://scholar.google.com/citations?user=-F_H26cAAAAJ
 email: 'Matthew.Laskowski@colorado.edu'
 highlight_name: false
 user_groups:

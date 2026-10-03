@@ -21,6 +21,9 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:Tianchu.Li@colorado.edu'
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.com/citations?user=VXP35UkAAAAJ
 email: 'Tianchu.Li@colorado.edu'
 highlight_name: false
 user_groups:

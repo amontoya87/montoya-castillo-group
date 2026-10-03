@@ -10,10 +10,11 @@
     {{- $edu = $edu | append $line }}
   {{- end }}
 {{- end }}{{ end }}
-{{- $email := "" }}{{ $scholar := "" }}
+{{- $email := "" }}{{ $scholar := "" }}{{ $web := "" }}
 {{- range .Params.social }}
   {{- if eq .icon "envelope" }}{{ $email = .link }}{{ end }}
   {{- if eq .icon "google-scholar" }}{{ $scholar = .link }}{{ end }}
+  {{- if in (slice "globe" "link" "house") .icon }}{{ $web = .link }}{{ end }}
 {{- end }}
 <div class="person" tabindex="0">
   <div class="person-default">
@@ -28,10 +29,11 @@
     <div class="person-name">{{ .Title }}</div>
     {{ with $role }}<div class="person-role">{{ . }}</div>{{ end }}
     {{ range first 2 $edu }}<div class="person-edu">{{ . }}</div>{{ end }}
-    {{- if or $email $scholar }}
+    {{- if or $email $scholar $web }}
     <div class="person-socials">
       {{- with $email }}<a href="{{ . }}" aria-label="Email {{ $p.Title }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1z"/><path d="M3 7l9 7 9-7"/></svg></a>{{ end }}
       {{- with $scholar }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="Google Scholar profile of {{ $p.Title }}"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 2zm6.82 6L12 11.72 5.18 8 12 4.28 18.82 8zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg></a>{{ end }}
+      {{- with $web }}<a href="{{ . }}" target="_blank" rel="noopener" aria-label="Personal website of {{ $p.Title }}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></a>{{ end }}
     </div>
     {{- end }}
   </div>

@@ -27,7 +27,7 @@ social:
     link: 'mailto:Nanako.Shitara@colorado.edu'
   - icon: google-scholar
     icon_pack: ai
-    link: https://scholar.google.com/citations?user=4szVTK4AAAAJ
+    link: https://scholar.google.com/citations?user=dEJXz04AAAAJ
 email: 'Nanako.Shitara@colorado.edu'
 highlight_name: false
 user_groups:
