@@ -17,4 +17,5 @@ spectroscopy framework published in *J. Chem. Phys.*
 
 <div class="gallery">
   <img src="photo-1.jpg" alt="The group toasting Nanako after her PhD defense" loading="lazy">
+  <img src="photo-2.jpg" alt="Celebration dinner after Nanako's defense" loading="lazy">
 </div>
