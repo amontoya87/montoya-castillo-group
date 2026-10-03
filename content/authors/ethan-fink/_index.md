@@ -21,6 +21,9 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:Ethan.Fink@colorado.edu'
+  - icon: google-scholar
+    icon_pack: ai
+    link: https://scholar.google.com/citations?user=Irmm7DgAAAAJ
 email: 'Ethan.Fink@colorado.edu'
 highlight_name: false
 user_groups:
