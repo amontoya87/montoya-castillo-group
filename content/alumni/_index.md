@@ -55,7 +55,7 @@ sections:
         | Name | Years | Honors in the group | Now |
         |---|---|---|---|
         | Anthony Hampton | Summer 2023 – Summer 2024 | ACS Physical Chemistry Award (2024); Toji Fellowship, Department of Chemistry (Summer 2023, Summer 2024) | Asset Management Analyst, Wunder Capital |
-        | Monica Ochoa | Fall 2023 – Spring 2026 | ACS Physical Chemistry Award (2025); Pfizer La Jolla Academic-Industrial Relations (AIR) Diversity Research; Undergraduate Research Opportunities Program, UROP (Fall 2024) | Clinical Research Coordinator, CU Anschutz |
+        | Monica Ochoa | Fall 2023 – Spring 2026 | ACS Physical Chemistry Award (2025); Pfizer La Jolla Academic-Industrial Relations (AIR) Diversity Research; Undergraduate Research Opportunities Program, UROP (Fall 2024) | Clinical Research Coordinator, CU Anschutz |; Honors thesis: *Toward Mechanistic Insight of Intrinsically Disordered Proteins Using AlphaFold*
         | Marcos Ortega-Keshmiri | Spring 2025 – Fall 2025 | Undergraduate Research Opportunities Program, UROP (Summer 2025) | |
         | Patrick Pillans | Fall 2022 – Spring 2024 | | Physics Master's student, University of Northern British Columbia |
     design:
@@ -70,7 +70,7 @@ sections:
         |---|---|---|---|
         | Yiming Zhu | Sophomore, Hamilton College | Summer 2026 (May 21 – July 30) | Ten-week research internship with Pranay Venkatesh and Tianchu Li, learning and applying our quantum dynamics tools (SBtMPS) to understand decoherence in molecular qubits |
         | Ofir Blumer | PhD student, Tel Aviv University (Hirschberg group) | Fall 2025 (six weeks) | Merging his ideas on stochastic resetting with our biomolecular generalized master equations, supported by the Rahamimoff Travel Grant Program |
-        | Lina Niepelt | Master's student, ETH Zurich | 2024–2025 | Master's thesis: *Projection operators and decorrelation times in non-Markovian dynamics modeling* |
+        | Lena Niepelt | Master's student, ETH Zurich | 2024–2025 | Master's thesis: *Projection operators and decorrelation times in non-Markovian dynamics modeling* |
         | Jack Good | High school researcher | 2021–2022 | Now an undergraduate at Cornell University |
     design:
       columns: '1'
