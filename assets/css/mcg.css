@@ -409,3 +409,13 @@ body.mcg {
 .group-photo figcaption { margin-top: .8rem; text-align: center; font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; color: var(--mid); }
 .person-honor { font-size: .72rem; color: var(--gold-deep); line-height: 1.4; margin-top: .35rem; font-style: italic; }
 @media (max-width: 500px) { .group-photo { padding: 0 1rem; } }
+
+/* News list: photo thumbnail beside posts that have photos */
+.news-list li.has-thumb { grid-template-columns: 6.5rem 1fr 160px; }
+.news-list .thumb { display: block; align-self: start; }
+.news-list .thumb img { width: 160px; height: 120px; object-fit: cover; border-radius: 4px; display: block; transition: opacity .2s; }
+.news-list .thumb:hover img { opacity: .85; }
+@media (max-width: 620px) {
+  .news-list li.has-thumb { grid-template-columns: 1fr; }
+  .news-list .thumb img { width: 100%; height: auto; aspect-ratio: 4 / 3; }
+}
