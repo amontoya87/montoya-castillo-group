@@ -4,12 +4,15 @@
 <section class="news-list">
   <ul>
     {{- range (where site.RegularPages "Section" "post").ByDate.Reverse }}
-    <li>
+    <li{{ if .Resources.GetMatch "photo*" }} class="has-thumb"{{ end }}>
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2006" }}</time>
       <div>
         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         {{ with .Summary }}<p>{{ . | plainify | htmlUnescape }}</p>{{ end }}
       </div>
+      {{- $post := . }}{{ with .Resources.GetMatch "photo*" }}
+      <a class="thumb" href="{{ $post.RelPermalink }}"><img src="{{ (.Fill "320x240 Center q78").RelPermalink }}" alt="" width="160" height="120" loading="lazy"></a>
+      {{- end }}
     </li>
     {{- end }}
   </ul>
