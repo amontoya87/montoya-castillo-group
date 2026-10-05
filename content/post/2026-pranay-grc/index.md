@@ -7,7 +7,8 @@ tags: ["Group News"]
 featured: false
 ---
 
-Pranay presented his work on quantum sensing at the Gordon Research
+Pranay presented his poster, *Leveraging Exact Many-Spin Dynamics to Build
+Noise Spectroscopy Dictionaries for Quantum Sensing*, at the Gordon Research
 Conference on the Convergence of Quantum Information and Magnetic Resonance
 (June 14–19, 2026).
 
