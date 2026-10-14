@@ -49,10 +49,10 @@ news_count: 5
 # Recent publications: edit by hand, same format as content/publication/_index.md.
 # <u>…</u> underlines group members at CU Boulder.
 recent_publications:
+  - '<u>T. Li</u>, <u>AMC</u>˚. "[Hidden gauge freedom in complex-pole hierarchical equations of motion.](https://doi.org/10.1103/bpq6-bydh)" *Phys. Rev. Lett.*, accepted (2026)'
   - '<u>T. Li</u>, <u>P. Venkatesh</u>, Q. Shi˚, <u>AMC</u>˚. "[For molecular polaritons, disorder and phonon timescales control the activation of dark states in the thermodynamic limit.](https://pubs.acs.org/doi/10.1021/acs.jpclett.6c02068)" *J. Phys. Chem. Lett.*, in press (2026)'
   - 'N. I. Hausman, J. Kelly, M. S. Chen, F. Hu, A. Lee, <u>AMC</u>, G. S. Schlau-Cohen, T. E. Markland. "[Streamlining analysis and design of two-dimensional electronic spectroscopy using machine learning.](https://pubs.aip.org/aip/jcp/article/165/7/074109/3401235)" *J. Chem. Phys.*, 165, 074109 (2026)'
   - '<u>M. R. Laskowski</u>, <u>S. Bhattacharyya</u>, <u>AMC</u>˚. "[How to improve the accuracy of semiclassical and quasiclassical dynamics with and without generalized quantum master equations.](https://pubs.aip.org/aip/jcp/article/164/22/224115/3394124)" *J. Chem. Phys.*, 164, 224115 (2026)'
-  - '<u>T. Li</u>\*, <u>P. Venkatesh</u>\*, <u>N. Shitara</u>, <u>AMC</u>˚. "[Numerically exact quantum dynamics with tensor networks: Predicting the decoherence of interacting spin systems.](https://pubs.aip.org/aip/jcp/article/164/9/091103/3382073/)" *J. Chem. Phys.*, 164, 091103 (2026)'
 
 join_band:
   image: flatirons-snowy-trail.jpg
