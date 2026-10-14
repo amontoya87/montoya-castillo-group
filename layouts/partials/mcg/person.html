@@ -19,7 +19,7 @@
 <div class="person" tabindex="0">
   <div class="person-default">
     <div class="person-circle">
-      {{- with .Resources.GetMatch "avatar*" }}
+      {{- with .Resources.GetMatch "avatar.*" }}
       <img src="{{ (.Fill "340x340 Center q80").RelPermalink }}" alt="{{ $p.Title }}" width="170" height="170" loading="lazy">
       {{- end }}
     </div>
