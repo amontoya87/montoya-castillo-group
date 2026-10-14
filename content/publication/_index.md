@@ -37,6 +37,7 @@ sections:
       text: |
         ### Preprints
 
+        1. <u>A. J. Dominic</u>, <u>B. Cham</u>, <u>AMC</u>˚. "[UGME: A python package for non-Markovian protein folding dynamics.](https://arxiv.org/abs/2610.14234)" *arXiv*:2610.14234 (2026)
         1. T. J. Krogmeier\*, <u>P. Venkatesh</u>\*, M. Z. Fahrenbruch, A. W. Schlimgen, <u>AMC</u>˚, K. Head-Marsden˚. "[Designing robust molecular spins for quantum technologies with theoretical chemistry.](https://arxiv.org/abs/2608.13744)" *arXiv*:2608.13744 (2026)
         1. R. Almaraz\*, A. P. Tews\*, <u>T. Sayer</u>\*, J. Toole, K. Wang, M. Ahmadi, D. Wright, E. M. Miller, R. Nazemi, S. Ki, S. Maldonado, <u>AMC</u>, J. B. Sambur˚. "[Giant band gap renormalization dictates current–voltage behavior of 2D semiconductor electrodes.](https://chemrxiv.org/doi/full/10.26434/chemrxiv.15003526/v2)" *ChemRxiv*:15003526 (2026)
         1. <u>T. Sayer</u>\*, <u>E. H. Fink</u>\*, <u>Z. R. Wiethorn</u>, D. R. Williams, <u>A. J. Dominic</u>, L. Guerrieri, Y. Ji, V. Policht, J. Ogilvie, G. Schlau-Cohen, A. Krummel, <u>AMC</u>˚. "[Short-lived memory in multidimensional spectra encodes full signal evolution.](https://arxiv.org/abs/2603.29814)" *arXiv*:2603.29814 (2026)
