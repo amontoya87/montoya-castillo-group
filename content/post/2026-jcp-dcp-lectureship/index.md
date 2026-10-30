@@ -1,6 +1,6 @@
 ---
 title: "Andrés named a JCP/DCP Future of Chemical Physics Lecturer"
-date: 2026-10-30
+date: 2026-10-27
 summary: "Andrés receives the Journal of Chemical Physics and APS Division of Chemical Physics Future of Chemical Physics Lectureship."
 authors: ["admin"]
 tags: ["Awards"]
