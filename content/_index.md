@@ -36,6 +36,7 @@ pi:
   role: Assistant Professor of Chemistry · CU Boulder
   bio: Andrés is a theoretical chemist working at the intersection of physical chemistry, applied mathematics, and quantum information science. He received his PhD in Chemical Physics from Columbia University and was a postdoctoral fellow at Stanford before starting the group at CU Boulder.
   honors:
+    - JCP/DCP Future of Chemical Physics Lectureship
     - JCP Emerging Investigator Award
     - Camille Dreyfus Teacher-Scholar
     - Sloan Research Fellow
