@@ -37,6 +37,7 @@ sections:
       text: |
         ### Preprints
 
+        1. <u>P. Venkatesh</u>, <u>T. Li</u>, <u>S. Bhattacharyya</u>, <u>AMC</u>˚. "[Memory-gated transient anomalous transport of quasiparticles out of equilibrium.](https://arxiv.org/abs/2611.14261)" *arXiv*:2611.14261 (2026)
         1. <u>T. Li</u>, <u>P. Venkatesh</u>, <u>AMC</u>˚. "[Continuous representation theory of the hierarchical equations of motion.](https://arxiv.org/abs/2610.37953)" *arXiv*:2610.37953 (2026)
         1. <u>A. J. Dominic</u>, <u>B. Cham</u>, <u>AMC</u>˚. "[UGME: A python package for non-Markovian protein folding dynamics.](https://arxiv.org/abs/2610.14234)" *arXiv*:2610.14234 (2026)
         1. T. J. Krogmeier\*, <u>P. Venkatesh</u>\*, M. Z. Fahrenbruch, A. W. Schlimgen, <u>AMC</u>˚, K. Head-Marsden˚. "[Designing robust molecular spins for quantum technologies with theoretical chemistry.](https://arxiv.org/abs/2608.13744)" *arXiv*:2608.13744 (2026)
